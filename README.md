@@ -4,12 +4,12 @@ Matrix_python
 Make solving a matrix operation easy by python(For Linear Algebra Students)
 ---------
     
-### Introduction
+### Introduction.
     
 I used Sympy as a tool for Matrix operations  
 <https://www.sympy.org/en/index.html>
     
-**You have to install Sympy in your desktop first**
+You have to install Sympy in your desktop first
     
 In terminal(for python 3)    
 >pip3 install sympy
