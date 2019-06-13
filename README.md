@@ -4,7 +4,7 @@ Matrix_python
 Make a matrix fast, and operate it easily by python(For Linear Algebra Students)
 ---------
     
-### Introduction.
+## Introduction.
     
 I used Sympy as a tool for Matrix operations  
 <https://www.sympy.org/en/index.html>
@@ -21,7 +21,7 @@ And then open python3 with terminal in the folder where this **ma.py** downloade
     
 #### That's all! Use Functions for matrix operations.
     
-### Functions
+## Functions.
     
 Functions | Features | Declaration 
 ---|---|---
@@ -32,7 +32,7 @@ ef(matrix)|make matrix ' A ' as Echelon form|E = ef(A)
 **char2(matrix)**|make ' A-LI matrix ', and show Characteristic equation and solution|M = char2(A)
 **sol(matrix)**|make a solution for bigger than 2 by 2 ' A-LI matric ' determinant|M = sol(A)
     
-### Instructions
+## Instructions.
     
 #### 1. new( ):  
 *    When you make a mistake, just enter 'Enter'. **It will make new matrix**
