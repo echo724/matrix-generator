@@ -49,12 +49,20 @@ def ran(num):
         sentinel = int(input('Enter "-1" to terminate(if not Enter) '))
         if sentinel is -1:
             break
-
 #sol is solution of equation of determinant matrix for eigenvalues
 #which is charateristic equation
-def char2(ma):
+def char(ma,num):
     #to make Matrix as A-LI
-    B = sy.Matrix([['L',0],[0,'L']])
+    count_column = 0
+    count_row = 0
+    M = [[0 for i in range(num)] for j in range(num)]
+    for count_row in range(num):
+        for count_column in range(num):
+            if count_column == count_row:
+                M[count_row][count_column] = 'L'
+            else:
+                M[count_row][count_column] = 0
+    B = sy.Matrix(M)
     C = ma - B
     eq = C.det()
     print("Characteristic Equation:")
@@ -62,7 +70,3 @@ def char2(ma):
     print("Solution of Char_Equation")
     print(sy.solve(eq,'L'))
     return C
-#More than 2 dimensional Matrix
-def sol(ma):
-    eq = ma.det()
-    return sy.solve(eq,'L')
