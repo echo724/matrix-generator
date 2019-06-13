@@ -44,5 +44,5 @@ sol(matrix)|make a solution for bigger than 2*2 A-LI's determinant|M = sol(A)
      Ex) If the range is ax-by-cz = 0 -> enter a,-b,-c
     
 #### 3. char2() and sol():  
-*    Put 2 by 2 matrix **A** as input of **char2()**, not sol()
-*    In the case of sol(), you have to put A - LI ( L is lamda,eigenvalue )
+*    Put 2 by 2 matrix **A** as input of **char2()**, not **A - LI matrix**
+*    In the case of sol(), you have to put A - LI matrix ( L is lamda,eigenvalue )
