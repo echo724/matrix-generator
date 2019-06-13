@@ -38,7 +38,7 @@ sol(matrix)|make a solution for bigger than 2*2 A-LI's determinant|M = sol(A)
 *    When you make a mistake, just enter 'Enter'. **It will make new matrix**
 *   You can use any type of componenent(int,float,string). 
      Even a fraction like 1/2    
-#### - ran():  
+#### 2. ran():  
 *    First you have to find echelon form of linear combination's agmented coefficient matrix
 *    Put coefficients of the range. 
      Ex) If the range is ax-by-cz = 0 -> enter a,-b,-c
