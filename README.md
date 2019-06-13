@@ -1,7 +1,7 @@
 
 Matrix_python
 =============
-Make solving a matrix operation easy by python(For Linear Algebra Students)
+Make a matrix fast, and operate it easily by python(For Linear Algebra Students)
 ---------
     
 ### Introduction.
