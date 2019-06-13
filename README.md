@@ -32,7 +32,7 @@ Functions | Features | Declaration
 **ef(matrix)**|make matrix ' A ' as Echelon form|E = ef(A)
 **rf(matrix)**|make matrix ' A ' as Reduced Echelon form|R = rf(A)
 **ran(number)**|check Image Vectors range|ran(3)
-**char(matrix,num)**|make ' A-LI matrix ', and show Characteristic equation and solution|M = char2(A,3)
+**char(matrix,num)**|make ' A-LI matrix ', and show Characteristic equation and solution|M = char(A,3)
     
 ## Instructions.
     
