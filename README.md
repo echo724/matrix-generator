@@ -32,8 +32,7 @@ Functions | Features | Declaration
 **ef(matrix)**|make matrix ' A ' as Echelon form|E = ef(A)
 **rf(matrix)**|make matrix ' A ' as Reduced Echelon form|R = rf(A)
 **ran(number)**|check Image Vectors range|ran(3)
-**char2(matrix)**|make ' A-LI matrix ', and show Characteristic equation and solution|M = char2(A)
-**sol(matrix)**|make a solution for bigger than 2 by 2 ' A-LI matric ' determinant|M = sol(A)
+**char(matrix,num)**|make ' A-LI matrix ', and show Characteristic equation and solution|M = char2(A,3)
     
 ## Instructions.
     
@@ -45,6 +44,5 @@ Functions | Features | Declaration
 *    Put coefficients of the range. 
      Ex) If the range is ax-by-cz = 0 -> enter a,-b,-c
     
-#### 3. char2( ) and sol( ):  
-*    Put 2 by 2 matrix **' A '** as input of **char2( )**, not **' A - LI matrix '**
-*    In the case of sol( ),  you have to put **' A - LI matrix '** ( L is lamda,eigenvalue )
+#### 3. char( ):  
+*    Put a Matrix and number of the matrix dimension ( if 2 by 2 matrix, enter 2 )
