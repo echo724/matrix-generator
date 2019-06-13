@@ -35,14 +35,14 @@ sol(matrix)|make a solution for bigger than 2*2 A-LI's determinant|M = sol(A)
 ### Instructions
     
 #### 1. new():  
-    - When you make a mistake, just enter 'Enter'. **It will make new matrix**
-    - You can use any type of componenent(int,float,string). 
-    Even a fraction like 1/2    
-#### 2. ran():    
-    - First you have to find echelon form of linear combination's agmented coefficient matrix
-    - Put coefficients of the range. 
-    Ex) If the range is ax-by-cz = 0 -> enter a,-b,-c
+*    When you make a mistake, just enter 'Enter'. **It will make new matrix**
+*   You can use any type of componenent(int,float,string). 
+     Even a fraction like 1/2    
+#### - ran():  
+*    First you have to find echelon form of linear combination's agmented coefficient matrix
+*    Put coefficients of the range. 
+     Ex) If the range is ax-by-cz = 0 -> enter a,-b,-c
     
-#### 3. char2() and sol():    
-    - Put 2 by 2 matrix **A** as input of **char2()**, not sol()
-    - In the case of sol(), you have to put A - LI ( L is lamda,eigenvalue )
+#### 3. char2() and sol():  
+*    Put 2 by 2 matrix **A** as input of **char2()**, not sol()
+*    In the case of sol(), you have to put A - LI ( L is lamda,eigenvalue )
