@@ -9,7 +9,7 @@ Make a matrix fast, and operate it easily by python(For Linear Algebra Students)
 I used Sympy as a tool for Matrix operations  
 <https://www.sympy.org/en/index.html>
 
-####Guide to start  
+#### Guide to start  
 1. First install Pip in your enviroment.    
     follow this link for installation
     <https://pip.pypa.io/en/stable/installing/>     
@@ -18,7 +18,7 @@ I used Sympy as a tool for Matrix operations
 3. In terminal ( for python 3 )    
 >$ pip3 install sympy       
 4. And then open python3 with terminal in the folder where this **ma.py** downloaded, and import ma.py
-    
+        
 in python
 >   $ from ma.py import *
 
