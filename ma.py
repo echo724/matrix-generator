@@ -1,30 +1,5 @@
 import sympy as sy
-def make(row,col):
-    while True:
-        count_column = 0
-        count_row = 0
-        M = [[0 for i in range(col)] for j in range(row)]
-        while count_row < row:
-                while count_column < col:
-                    print('Index: ',count_row + 1,count_column + 1)
-                    c = input('components ')
-                    if c is ' ':
-                        malfunction = True
-                        break
-                    elif isinstance(c,str):
-                        M[count_row][count_column]= c
-                    else:  
-                        M[count_row][count_column]= float(c)
-                    count_column += 1
-                if malfunction:
-                    break
-                else:
-                    count_row += 1
-                    count_column = 0
-        if malfunction:
-            continue
-        else:
-            return sy.Matrix(M)
+
 def new():
     while True:
         row = int(input('Matrix Row: '))
@@ -58,6 +33,7 @@ def ef(mat1):
     return mat1.echelon_form()
 def rf(mat2):
     return mat2.rref()
+#write int numbers of coefficients as parameter to 
 def ran(num):
     count = 0
     coeff = [0 for i in range(num)]
@@ -67,7 +43,7 @@ def ran(num):
         count = 0
         s = 0
         for count in range(num):
-            vector = float(input('Write down Vector '))
+            vector = float(input('Write down Image Vectors '))
             s += coeff[count]*vector
         print(s)
         sentinel = int(input('Enter "-1" to terminate(if not Enter) '))
