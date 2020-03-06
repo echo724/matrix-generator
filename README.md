@@ -33,7 +33,7 @@ The following dependencies are required
     orthon(foo) #makes orthogonal basis matrix
     
     vec(2,1) #makes the vector (2,1)
-	```
+```
 
 ## Instructions
 
