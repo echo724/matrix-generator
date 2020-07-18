@@ -4,12 +4,13 @@ from sympy import sqrt
 def new(_row=-1,_col=-1):
     while True:
         if _col == -1:
+            print("--Enter a Matrix's Dimension--")
             row = int(input('Matrix Row: '))
             col = int(input('Matrix Col: '))
         else:
             try:
-                row=_row
-                col=_col
+                row=int(_row)
+                col=int(_col)
             except:
                 print("Invalid Input")
                 break
@@ -17,10 +18,10 @@ def new(_row=-1,_col=-1):
         count_row = 0
         malfunction = False
         M = [[0 for i in range(col)] for j in range(row)]
+        print("--Enter Elements--")
         while count_row < row:
             while count_column < col:
-                print('Index: ',count_row + 1,count_column + 1)
-                c = input('components ')
+                c = input('At Index ({0},{1}): '.format(count_row + 1,count_column + 1))
                 if c is '':
                     malfunction = True
                     break
@@ -30,7 +31,7 @@ def new(_row=-1,_col=-1):
                     M[count_row][count_column]= float(c)
                 count_column += 1
             if malfunction:
-                print("Entered Nothing. Regenerate it.")
+                print("Entered Nothing. Regenerate it.\n")
                 break
             else:
                 count_row += 1
@@ -38,6 +39,7 @@ def new(_row=-1,_col=-1):
         if malfunction:
             continue
         else:
+            print(sy.Matrix(M))
             return sy.Matrix(M)
 # def new(i,j):
 #     row = i
