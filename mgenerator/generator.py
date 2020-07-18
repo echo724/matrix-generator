@@ -1,10 +1,18 @@
 import sympy as sy
 from sympy import sqrt
 
-def new():
+def new(_row=-1,_col=-1):
     while True:
-        row = int(input('Matrix Row: '))
-        col = int(input('Matrix Col: '))
+        if _col == -1:
+            row = int(input('Matrix Row: '))
+            col = int(input('Matrix Col: '))
+        else:
+            try:
+                row=_row
+                col=_col
+            except:
+                print("Invalid Input")
+                break
         count_column = 0
         count_row = 0
         malfunction = False
@@ -22,6 +30,7 @@ def new():
                     M[count_row][count_column]= float(c)
                 count_column += 1
             if malfunction:
+                print("Entered Nothing. Regenerate it.")
                 break
             else:
                 count_row += 1
@@ -30,35 +39,35 @@ def new():
             continue
         else:
             return sy.Matrix(M)
-def new(i,j):
-    row = i
-    col = j
-    while True:
-        count_column = 0
-        count_row = 0
-        malfunction = False
-        M = [[0 for i in range(col)] for j in range(row)]
-        while count_row < row:
-            while count_column < col:
-                print('Index: ',count_row + 1,count_column + 1)
-                c = input('components ')
-                if c is '':
-                    malfunction = True
-                    break
-                elif isinstance(c,str):
-                    M[count_row][count_column]= c
-                else:
-                    M[count_row][count_column]= float(c)
-                count_column += 1
-            if malfunction:
-                break
-            else:
-                count_row += 1
-                count_column = 0
-        if malfunction:
-            continue
-        else:
-            return sy.Matrix(M)
+# def new(i,j):
+#     row = i
+#     col = j
+#     while True:
+#         count_column = 0
+#         count_row = 0
+#         malfunction = False
+#         M = [[0 for i in range(col)] for j in range(row)]
+#         while count_row < row:
+#             while count_column < col:
+#                 print('Index: ',count_row + 1,count_column + 1)
+#                 c = input('components ')
+#                 if c is '':
+#                     malfunction = True
+#                     break
+#                 elif isinstance(c,str):
+#                     M[count_row][count_column]= c
+#                 else:
+#                     M[count_row][count_column]= float(c)
+#                 count_column += 1
+#             if malfunction:
+#                 break
+#             else:
+#                 count_row += 1
+#                 count_column = 0
+#         if malfunction:
+#             continue
+#         else:
+#             return sy.Matrix(M)
 def ef(mat1):
     return mat1.echelon_form()
 def rf(mat2):
@@ -119,5 +128,4 @@ def vec(x,y):
     M = [0 for i in range(col)]
     M[0] = x
     M[1] = y
-
     return sy.Matrix(M)
