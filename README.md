@@ -1,5 +1,7 @@
 # matrix-generator
 
+[![PyPI version](https://badge.fury.io/py/mgenerator.svg)](https://badge.fury.io/py/mgenerator)
+
 This is a python program that helps you to make a sympy matrix easily. This module uses [sympy](https://www.sympy.org/en/index.html), python library for simbolic mathmatics. 
 
 By using this generator, you can create a new sympy matrix with only entering the dimension size and elements.
