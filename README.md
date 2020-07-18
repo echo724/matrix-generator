@@ -1,6 +1,8 @@
-# matrix_python
+# matrix-generator
 
-A Python Module for generating a matrix with only putting informations. This module uses [sympy](https://www.sympy.org/en/index.html), python library for simbolic mathmatics. By using sympy, this module makes sympy Matrix object, and calculate various linear-algebra mathmatics.
+This is a python program that helps you to make a sympy matrix easily. This module uses [sympy](https://www.sympy.org/en/index.html), python library for simbolic mathmatics. 
+
+By using this generator, you can create a new sympy matrix with only entering the dimension size and elements.
 
 ## Dependencies
 
@@ -10,13 +12,13 @@ The following dependencies are required
 
 ## Download
 
- ```bash  
-  $ git clone https://github.com/eunchan1001/matrix_python.git
+ ``` bash
+  $ pip install mgenerator
   ```
 
 ## Example
 ```python
-    from ma import *
+    from mgenerator import *
     
     foo = new() # makes new sympy Matrix object. You will enter elements
     foo = new(1,2) # makes new sympy Matrix with 1 raw and 2 column
@@ -37,16 +39,16 @@ The following dependencies are required
 
 ## Instructions
 
-1. new( ):
+1. `new( )`:
 
 - When you make a mistake, just enter 'Enter'. **It will make new matrix**
 - You can use any type of componenent(int,float,string), even a fraction like 1/2
 
-2. ran( ):
+2. `ran( )`:
 
 - First you have to find echelon form of linear combination's agmented coefficient matrix
 - Put coefficients of the range. Ex) If the range is ax-by-cz = 0 -> enter a,-b,-c
 
-3. char( ):
+3. `char( )`:
 
 - Put a Matrix and number of the matrix dimension ( if 2 by 2 matrix, enter 2 )
