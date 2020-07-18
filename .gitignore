@@ -1,0 +1,4 @@
+*.sh
+build
+dist
+*.egg-info
