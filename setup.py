@@ -7,7 +7,7 @@ with io.open('README.md', 'r', encoding='utf-8') as f:
 
 setup(
       name='mgenerator',
-      version='0.1.1',
+      version='0.1.2',
       description='Generate a sympy matrix fast',
       long_description=readme,
       long_description_content_type="text/markdown",
